@@ -1,0 +1,73 @@
+mat-sidenav-container{
+   height: 100vh;  
+}
+
+mat-sidenav{
+  width: 250px;
+  border-right: 1px solid rgb(216, 210, 210);
+  color: rgb(185, 184, 184);
+  background-color: rgba(245, 245, 245, 0.932);
+}
+.nav-position{
+  overflow-x: hidden !important;
+}
+
+.logo-area{
+  color: #352c9a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 1rem;
+  margin: 40px;
+}
+
+.menu-button{
+  font-size: 15px;
+  padding-right: 60px;
+  position: relative;
+  left: 3.5rem;
+  margin-bottom: 5px;
+}
+
+.menu-button:active{
+  background-color: inherit;
+  color: black;
+  padding-right: 70px;
+}
+
+.menu-button:hover  span{
+  background-color: inherit;
+  color: rgb(24, 23, 23);
+  /* padding-right: 70px; */
+}
+
+.menu-tag{
+  font-size: 14px;
+  position: relative;
+  left: 4.8rem;
+  color: rgb(24, 23, 23);
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pad i{
+  font-size: 1.2rem;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.pad i:hover{
+  color:#352c9a;
+}
+
+mat-sidenav-content{
+  margin-left: 50px ;
+}
+
+/* flex-gallery{
+  margin: 50px;
+} */
+
+

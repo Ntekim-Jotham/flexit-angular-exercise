@@ -1,0 +1,25 @@
+thead{
+    color: #337AB7;
+}
+
+.filterInput{
+    border: 2px solid #337AB7;
+    border-radius: 5px;
+}
+
+.product-name a{
+    text-decoration: none;
+    color: #337AB7;
+    font-weight: 500;
+}
+
+
+ /* td{
+    display: flex;
+    flex-direction: row;
+     justify-content: left !important; 
+    color: blue !important;
+} 
+/* .btn-color{
+    background-color: #1a96cf !important;
+} */

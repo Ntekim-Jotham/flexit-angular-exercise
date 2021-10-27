@@ -1,0 +1,10 @@
+.crop {
+  overflow: hidden;
+}
+div {
+  cursor: pointer;
+}
+
+.ratingStar span{
+  color: #268ee9;
+}

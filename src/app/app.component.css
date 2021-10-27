@@ -1,0 +1,17 @@
+.nav-link {
+  font-size: large;
+  color: #52a2e7 !important;
+  font-weight: 600;
+}
+.nav-decorator a{
+  text-decoration: none;
+
+}
+
+.nav-decorator{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+
+}
+

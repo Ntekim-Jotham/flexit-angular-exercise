@@ -1,0 +1,108 @@
+.toolbar-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toolbar-side-nav{
+    margin-top: 40px;
+}
+
+.tool-nav{
+    position: relative;
+    top: 20px;
+}
+
+.toolbar-side-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.example-card {
+    background-color: inherit;
+}
+
+.toolbar-avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+mat-card-header{
+    display: flex;
+    gap: 20px;
+}
+
+mat-card-title{
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(129, 126, 126);
+}
+
+.content{
+    /* margin-left: 40px; */
+    color: lightgrey;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 40px 60px 40px 40px;
+    border-radius: 10px;
+    width: 65%;
+  }
+  
+  .toolbar-search{
+    height: inherit;
+    border: none;
+  }
+  mat-toolbar{
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  mat-form-field{
+    color: rgb(138, 135, 135);
+  }
+  
+  mat-toolbar mat-form-field mat-icon{
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+  
+  .example-full-width button{
+    background-color: #352c9a;
+    color: white;
+    width: 100px;
+  } 
+  .example-full-width {
+    width: inherit;
+  
+} 
+
+.flex-container{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.flex-container mat-toolbar{
+    border-radius: 0;
+    height: 60px;
+    color: rgb(121, 118, 118);
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+.col-md mat-toolbar mat-label{
+    margin-right: 10px;
+}
+

@@ -1,0 +1,64 @@
+<mat-sidenav-container class="sidenav">
+    <mat-sidenav #sidenav="matSidenav">
+        <div class="nav-position">
+            <div class="pad">
+                <div class="logo-area">
+                    <img src="assets/images/cube-2.png" alt="bluecube" width="50px">
+                    <span>{{ pageTitle }}</span>
+                </div>
+            </div>
+            <div class="pad">
+                <a href="/" mat-button class="menu-button" active>
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button">
+                    <i class="fa fa-sticky-note"></i>
+                    <span>Message</span>
+                </a>
+            </div>
+            <p class="menu-tag">SHARE</p>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button fa">
+                    <i class="fab fa-industry"></i>
+                    <span>Ranking</span>
+                </a>
+            </div>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button">
+                    <i class="fa fa-transgender-alt"></i>
+                    <span>Challenge</span>
+                </a>
+            </div>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button ">
+                    <i class="fa fa-birthday-cake"></i>
+                    <span>Party</span>
+                </a>
+            </div>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button">
+                    <i class="fa fa-link"></i>
+                    <span>Connect</span>
+                </a>
+            </div>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button">
+                    <i class="fa fa-street-view"></i>
+                    <span>Parade</span>
+                </a>
+            </div>
+            <div class="pad">
+                <a href="#" mat-button class="menu-button">
+                    <i class="fa fa-users"></i>
+                    <span>Group</span>
+                </a>
+            </div>  
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <flex-toolbar></flex-toolbar>
+    </mat-sidenav-content>
+</mat-sidenav-container>

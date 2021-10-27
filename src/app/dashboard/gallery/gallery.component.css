@@ -1,0 +1,36 @@
+.container{
+    margin: 40px 0px 20px 40px;
+    width: 95%;
+}
+
+
+
+ .container mat-grid-list{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+  .mat-grid-tile{
+      border-radius: 10px !important;
+  }
+
+  .img-attachment{
+      bottom: 0px;
+      position: absolute;
+      width: 100% !important;
+      background: none !important;
+  }
+
+  mat-card-actions .fav{
+   background-color: red;
+   padding: 0px 30px 0px 30px !important;
+   color: white;
+  }
+
+  
+
+  mat-card-actions .thumbs-down{
+    background-color: #352c9a;
+    padding: 0px 30px 0px 30px !important;
+    color: white;
+   }

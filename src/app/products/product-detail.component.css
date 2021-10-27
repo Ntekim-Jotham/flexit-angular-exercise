@@ -1,0 +1,10 @@
+
+
+.card-footer {
+  display: flex;
+  justify-content: right;
+}
+
+#prod-detail .row .col-md-4, #prod-detail .row .col-md-7{
+  display: flex;
+}
