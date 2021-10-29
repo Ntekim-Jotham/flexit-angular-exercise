@@ -1,39 +1,33 @@
-<!--    <button  mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
-            <mat-icon *ngIf="sidenav.opened">
-                menu
-            </mat-icon>
-            <mat-icon *ngIf="sidenav.opened">
-                close
-            </mat-icon>
-        </button> -->
+<div class="main-content">
+        
         <div class="toolbar-1">
-            <div class="content" [class.mat-elevation-z4]="isActive">
-                <mat-toolbar>
-                    <mat-form-field class="example-full-width" appearnce="none">
+            <div class="content" >
+                <mat-toolbar [class.mat-elevation-z4]="isActive">
+                    <mat-form-field class="example-full-width" appearnce="fill">
                         <mat-label>Find Something...</mat-label>
-                        <mat-icon matPrefix>search</mat-icon>
-                        <input type="text" matInput placeholder="travel">
+                        <a href="#" matPrefix style="color:rgb(168, 164, 164);"><mat-icon >search</mat-icon></a>
+                        <input type="text" matInput placeholder="travel" name="searchKeyword" [(ngModel)]="searchKeyword">
                         <button mat-button matSuffix>Search</button>
                     </mat-form-field>
-                        <!-- <span class="example-spacer"></span> -->
                   </mat-toolbar>
     
             </div>
             <div class="toolbar-side-nav">
                 <div class="tool-nav">
-                    <p>
+                    <a href="#" tooltip="HtmlContent" content-type="template" placement="bottom">
                         <i class="fa fa-solid fa-bell fa-2x" style="color:#352c9a" matBadge="3" matBadgeColor="warn" matBadgePosition="below"></i>
-                    </p>
+                    </a>
+                    
                 </div>
                 <div  class="toolbar-profile">
-                    <mat-card [class.mat-elevation-z0]="isActive" class="example-card">
+                    <mat-card [class.mat-elevation-z0]="isActive"  class="example-card">
                         <mat-card-header>
                           <div mat-card-avatar class="toolbar-avatar">
                               <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="profile">
                           </div>
                           <mat-card-title >
-                            Abigail 
-                            <i class="fa fa-thin fa-chevron-down" style="font-size: 1rem !important; color: rgb(129, 126, 126);"></i>
+                              <span>Abigail</span>
+                              <i class="fa fa-thin fa-chevron-down" style="font-size: 1rem !important; color: rgb(129, 126, 126);"></i>
                           </mat-card-title>
                         </mat-card-header>
                     </mat-card>                      
@@ -121,3 +115,5 @@
         </div>
 
         <flex-gallery></flex-gallery>
+</div>
+

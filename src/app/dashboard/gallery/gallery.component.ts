@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { ImageService } from '../image.service';
 @Component({
   selector: 'flex-gallery',
@@ -9,17 +10,18 @@ export class GalleryComponent implements OnInit {
 
   items: any = [];
   name = [];
+  sub!: Subscription;
   constructor(private publicApi: ImageService) { }
 
   ngOnInit(): void {
-    this.publicApi.getImage().subscribe((resp: any) => {
+    this.sub = this.publicApi.getImage().subscribe((resp: any) => {
       this.items = resp;
       // this.name = this.ite
       console.log(this.items);
     });
   }
 
-  imageLoop(){
-    
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 }

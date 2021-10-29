@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   isActive = true;
-  searchKeyWorld = '';
+  searchKeyword = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  
 }

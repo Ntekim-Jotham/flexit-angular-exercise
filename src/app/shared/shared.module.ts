@@ -12,6 +12,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSelectModule,
     MatBadgeModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    TooltipModule
+
     
   ]
 })

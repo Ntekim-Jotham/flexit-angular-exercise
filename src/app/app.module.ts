@@ -22,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
     DashboardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
   ],
   bootstrap: [AppComponent]
 

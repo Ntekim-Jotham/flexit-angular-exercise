@@ -1,6 +1,6 @@
-.container{
-    margin: 40px 0px 20px 40px;
-    width: 95%;
+.gallery{
+    margin: 40px 0px 20px 15px;
+    
 }
 
 
@@ -21,6 +21,10 @@
       background: none !important;
   }
 
+  mat-card-actions{
+      display: none;
+  }
+
   mat-card-actions .fav{
    background-color: red;
    padding: 0px 30px 0px 30px !important;
@@ -34,3 +38,28 @@
     padding: 0px 30px 0px 30px !important;
     color: white;
    }
+
+   ::ng-deep .mat-card, .mat-card-subtitle{
+       background: none;
+       color: white;
+   }
+
+   ::ng-deep .mat-card{
+       border-radius: 0px;
+   }
+
+mat-grid-tile:hover ::ng-deep .mat-card{
+    background: white;
+    color: black;
+}
+
+mat-grid-tile:hover ::ng-deep .mat-card-subtitle{
+    color: black;
+}
+
+mat-grid-tile:hover .mat-card-actions{
+    display: block;
+}
+/* mat-grid-tile img:hover mat-card-actions{
+    display: block;
+} */

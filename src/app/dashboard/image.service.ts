@@ -13,7 +13,7 @@ export class ImageService implements OnInit {
   constructor(private http: HttpClient) { }
   getImage() {
     return this.http.get(
-      `https://api.unsplash.com/photos/?page=${this.page}&per_page=${this.per_page}&client_id=${this.Key}`
+      `https://api.unsplash.com/photos/?client_id=${this.Key}`
     );
   }
 

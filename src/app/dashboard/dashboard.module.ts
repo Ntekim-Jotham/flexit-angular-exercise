@@ -16,7 +16,7 @@ import { GalleryComponent } from './gallery/gallery.component';
   ],
   imports: [
     CommonModule,
-    SharedModule,
+    SharedModule
   ],
   exports: [
     SidenavComponent,

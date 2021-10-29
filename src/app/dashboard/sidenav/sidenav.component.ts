@@ -9,6 +9,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 })
 export class SidenavComponent implements OnInit {
   pageTitle = 'bluecube';
+  color = 'color:lightgray;';
 
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;

@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav">
+<mat-sidenav-container class="sidenav" closed>
     <mat-sidenav #sidenav="matSidenav">
         <div class="nav-position">
             <div class="pad">
@@ -59,6 +59,14 @@
         </div>
     </mat-sidenav>
     <mat-sidenav-content>
+        <button mat-icon-button  *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <mat-icon>
+                menu
+            </mat-icon>
+            <mat-icon *ngIf="sidenav.opened">
+                close
+            </mat-icon>
+        </button>
         <flex-toolbar></flex-toolbar>
     </mat-sidenav-content>
 </mat-sidenav-container>

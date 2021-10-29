@@ -62,12 +62,10 @@ mat-sidenav{
   color:#352c9a;
 }
 
-mat-sidenav-content{
-  margin-left: 50px ;
+button mat-icon{
+  color:#4438b4 !important;
+  margin-left: 15px;
 }
 
-/* flex-gallery{
-  margin: 50px;
-} */
 
 
