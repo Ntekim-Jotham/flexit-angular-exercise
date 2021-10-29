@@ -58,7 +58,7 @@ mat-grid-tile:hover ::ng-deep .mat-card-subtitle{
 }
 
 mat-grid-tile:hover .mat-card-actions{
-    display: block;
+    display: flex;
 }
 /* mat-grid-tile img:hover mat-card-actions{
     display: block;
