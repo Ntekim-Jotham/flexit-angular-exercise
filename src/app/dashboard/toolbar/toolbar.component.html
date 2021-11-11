@@ -6,8 +6,8 @@
                     <mat-form-field class="example-full-width" appearnce="fill">
                         <mat-label>Find Something...</mat-label>
                         <a href="#" matPrefix style="color:rgb(168, 164, 164);"><mat-icon >search</mat-icon></a>
-                        <input type="text" matInput placeholder="travel" name="searchKeyword" [(ngModel)]="searchKeyword">
-                        <button mat-button matSuffix>Search</button>
+                        <input type="search" matInput name="searchKeyword" [(ngModel)]="searchKeyword">
+                        <button mat-button matSuffix (click)="getKeyword()">Search</button>
                     </mat-form-field>
                   </mat-toolbar>
     
@@ -114,6 +114,6 @@
                 </div>
         </div>
 
-        <flex-gallery></flex-gallery>
+        <flex-gallery [searchKeyword]="keyword"></flex-gallery>
 </div>
 

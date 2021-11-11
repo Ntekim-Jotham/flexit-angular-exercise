@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageService } from '../gallery/gallery.service';
 
 @Component({
   selector: 'flex-toolbar',
@@ -7,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   isActive = true;
-  searchKeyword = '';
-  constructor() { }
+   searchKeyword = '';
+   keyword = '';
+  constructor( ) { }
 
   ngOnInit(): void {
   }
 
-
-  
+  getKeyword(){
+    this.keyword = this.searchKeyword;
+    console.log(this.keyword);
+  }  
 }

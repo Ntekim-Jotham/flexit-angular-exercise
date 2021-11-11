@@ -8,4 +8,6 @@ app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname + '/dist/flexit/index.html'));
 });
 
-app.listen(process.env.PORT || 8080);
+var listener = app.listen(process.env.PORT || 8000, function(){
+    console.log('Listening on port ' + listener.address().port); //Listening on port 8888
+  });
